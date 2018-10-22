@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EasyAuth_Example' do
+  pod 'EasyAuth', :path => '../'
+
+  target 'EasyAuth_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
