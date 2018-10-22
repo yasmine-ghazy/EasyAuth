@@ -38,5 +38,18 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking'
+  
+  # Pods for SocialSignIn
+#  s.dependency 'GoogleSignIn'
+  s.dependency 'FBSDKCoreKit'
+  s.dependency 'FBSDKLoginKit'
+  s.dependency 'TwitterKit'
+  s.dependency 'SnapKit'
+  s.dependency 'LinkedinSwift'
+  s.dependency 'SwiftInstagram'
+  s.dependency 'InstagramLogin'
+  s.dependency 'Material'
+  s.dependency 'Localize-Swift'
+  
 end
