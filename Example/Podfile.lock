@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Alamofire (4.7.3)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
@@ -22,6 +23,7 @@ PODS:
   - Bolts/Tasks (1.9.0)
   - EasyAuth (0.1.0):
     - AFNetworking
+    - Alamofire
     - FBSDKCoreKit
     - FBSDKLoginKit
     - InstagramLogin
@@ -60,31 +62,15 @@ PODS:
 DEPENDENCIES:
   - EasyAuth (from `../`)
 
-SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - AFNetworking
-    - Bolts
-    - FBSDKCoreKit
-    - FBSDKLoginKit
-    - InstagramLogin
-    - IOSLinkedInAPIFix
-    - LinkedinSwift
-    - Localize-Swift
-    - Material
-    - Motion
-    - SnapKit
-    - SwiftInstagram
-    - TwitterCore
-    - TwitterKit
-
 EXTERNAL SOURCES:
   EasyAuth:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  EasyAuth: d9f4f389a135eecfe0fef0e0373536e768bc82b4
+  EasyAuth: 212efa5590613ef663746585548954e407e6f882
   FBSDKCoreKit: fe5f3474499a81963e11e3f3a5c753d0a95ca2b4
   FBSDKLoginKit: 2f7249686d1e30ce8a5ef5400eedf50b3e3df332
   InstagramLogin: 55a3ab7aa6ee3f75bf06fdec1bb8f1e01e2c0b00
@@ -100,4 +86,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 6f6847738141d1de9394cc58afc02bef396ab246
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.4.0
