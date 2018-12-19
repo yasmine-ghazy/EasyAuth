@@ -41,7 +41,6 @@ TODO: Add long description of the pod here.
   s.dependency 'AFNetworking'
   
   # Pods for SocialSignIn
-#  s.dependency 'GoogleSignIn'
   s.dependency 'FBSDKCoreKit'
   s.dependency 'FBSDKLoginKit'
   s.dependency 'TwitterKit'
@@ -53,4 +52,6 @@ TODO: Add long description of the pod here.
   s.dependency 'Localize-Swift'
   s.dependency 'Alamofire'
   s.dependency 'SnapKit'
+  s.dependency 'GoogleSignIn'
+  
 end

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EasyAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,7 +22,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = vc
         window?.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()
+
+        var li = LinkedInAuth(clientId: Constants.LI_clientId, clientSecret: Constants.LI_clientSecret, state: Constants.LI_state, permissions: Constants.LI_permissions, redirectUrl: Constants.LI_redirectUrl)
+        
+        var twtr = TwitterAuth(consumerKey: Constants.Twitter_consumerKey, consumerSecret: Constants.Twitter_consumerSecret)
+        
+        var inst = InstagramAuth(clientId: Constants.Insta_clientID, redirectUrl: Constants.Insta_redirectURI)
+        
+        let fb = FacebookAuth()
+        
+        li.didFinishLaunch()
+        twtr.didFinishLaunch()
+        fb.didFinishLaunch()
+        
+        
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+         var twtr = TwitterAuth(consumerKey: Constants.Twitter_consumerKey, consumerSecret: Constants.Twitter_consumerSecret)
+        if twtr.handleOpenURL(app, open: url, options: options){
+            return true
+        }
+        return false
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
